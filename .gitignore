@@ -1,0 +1,20 @@
+# Environment (secrets)
+.env
+.env.local
+.env.production
+
+# macOS
+.DS_Store
+
+# Docker
+deploy.tar
+
+# Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Aider
+.aider*
