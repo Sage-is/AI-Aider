@@ -104,6 +104,7 @@ aider_ollama: ## Run Aider with Ollama (local models)
 	docker run -it --rm \
 		--user $$(id -u):$$(id -g) \
 		--volume $(WORK_DIR):/app \
+		--add-host=host.docker.internal:host-gateway \
 		-e OLLAMA_API_BASE=$${OLLAMA_API_BASE:-http://host.docker.internal:11434} \
 		$(DOCKER_ENV_FLAGS) \
 		paulgauthier/aider:$(AIDER_TAG) \
